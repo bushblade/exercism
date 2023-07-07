@@ -67,11 +67,7 @@ export class List {
   }
 
   foldr<A, E>(fn: (acc: A, el: E) => A, acc: A): A {
-    for (const value of this.reverse().items.values()) {
-      acc = fn(acc, value)
-    }
-
-    return acc
+    return this.reverse().foldl(fn, acc)
   }
 
   reverse(): List {
