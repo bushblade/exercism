@@ -24,7 +24,8 @@
     "prettier": "^3.3.3",
     "tstyche": "^2.1.1",
     "typescript": "~5.5.4",
-    "typescript-eslint": "^7.18.0"
+    "typescript-eslint": "^7.18.0",
+    "@types/bun": "latest"
   },
   "scripts": {
     "test": "corepack yarn node test-runner.mjs",
@@ -34,5 +35,6 @@
     "lint:types": "corepack yarn tsc --noEmit -p .",
     "lint:ci": "corepack yarn eslint . --ext .tsx,.ts"
   },
-  "packageManager": "yarn@4.3.1"
+  "packageManager": "yarn@4.3.1",
+  "module": "index.ts"
 }
