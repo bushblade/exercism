@@ -4,3 +4,5 @@ __pycache__
 clojure/**/.clj-kondo/
 clojure/**/.cpcache/
 clojure/**/.lsp/
+typescript/eliuds-eggs/.exercism
+typescript/eliuds-eggs/.vscode
